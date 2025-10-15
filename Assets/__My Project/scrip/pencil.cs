@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class pencil : MonoBehaviour
 {
-    public float zSpeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,6 +11,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0,0,zSpeed * Time.deltaTime);
+        
     }
 }
