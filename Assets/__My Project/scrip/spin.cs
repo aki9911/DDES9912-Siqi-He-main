@@ -79,8 +79,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
              } 
         }
     }
-
-   public void SetSpeed(float newSpeed)
+    public void HandleStop9()
+    {
+        zSpeed = 0f;
+    }
+    public void SetSpeed(float newSpeed)
     {
         zSpeed = newSpeed;
     }
@@ -94,9 +97,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         tipReplaced=true;    
     }
-    public void HandleStop9()
-    {
-        zSpeed = 0f;
-    }
+ 
 
 }
