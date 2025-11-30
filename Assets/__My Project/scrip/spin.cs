@@ -44,7 +44,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
         isReturning = true;
       }
     }
-    // Update is called once per frame
+   
+ // Update is called once per frame
     void Update()
     { 
      transform.Rotate(0f,0f,zSpeed * Time.deltaTime);
@@ -93,5 +94,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         tipReplaced=true;    
     }
-  
+    public void HandleStop9()
+    {
+        zSpeed = 0f;
+    }
+
 }
