@@ -14,7 +14,11 @@ public class soundhit : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
+    {
+        audioSource.Play(); 
+    }
+    private void OnTriggerEnter(Collider other)
     {
         audioSource.Play();
     }
